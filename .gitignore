@@ -1,6 +1,5 @@
 *.sh
 node_modules
-build
 
 # Editors
 .idea

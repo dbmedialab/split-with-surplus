@@ -7,9 +7,10 @@
 		"url": "git+https://github.com/dbmedialab/split-with-surplus.git"
 	},
 	"homepage": "https://github.com/dbmedialab/split-with-surplus",
-	"main": "build/split-with-surplus.js",
+	"bugs": "https://github.com/dbmedialab/split-with-surplus/issues",
+	"main": "dist/split-with-surplus.js",
 	"scripts": {
-		"build": "babel src -d build",
+		"build": "babel src -d dist",
 		"prepublish": "npm run build && npm test",
 		"test:lint": "eslint src/.",
 		"test": "npm run test:lint"
@@ -18,7 +19,7 @@
 		"node": ">=6.x.x"
 	},
 	"author": "",
-	"license": "MIT",
+	"license": "ISC",
 	"dependencies": {},
 	"devDependencies": {
 		"@aller/eslint-config-aller": "0.5.2",
