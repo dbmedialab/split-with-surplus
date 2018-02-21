@@ -1,0 +1,18 @@
+*.sh
+node_modules
+build
+
+# Editors
+.idea
+*.iml
+*.swp
+.vscode
+
+# Only apps should have lockfiles
+yarn.lock
+package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
