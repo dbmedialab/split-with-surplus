@@ -6,8 +6,8 @@ npm install split-with-surplus
 ```
 
 ``` js
-import splitWithSurplus from 'split-with-surplus';
+import split from 'split-with-surplus';
 
-splitWithSurplus('a:b:c:d:e:f', ':', 3);
+split('a:b:c:d:e:f', ':', 3);
 // ['a', 'b', 'c', 'd:e:f']
 ```
