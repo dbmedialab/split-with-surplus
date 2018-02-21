@@ -5,13 +5,16 @@ export default function splitWithSurplus(string = '', separator = ',', limit) {
 
 	const output = string.split(separator, limit);
 
-	if (output.length <= limit) {
+	if (output.length < limit) {
 		return output;
 	}
 
 	const limitIndex = output.join(separator).length + separator.length;
 	const leftover = string.substr(limitIndex);
-	output.push(leftover);
+
+	if (leftover) {
+		output.push(leftover);
+	}
 
 	return output;
 }
